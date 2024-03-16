@@ -298,18 +298,16 @@ body::-webkit-scrollbar-thumb:hover {
 
 .bento-bg {
   content: "";
-  background-size: cover;
+  /* background-size: cover; */
   position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 10;
-  filter: grayscale(100%);
-  transition: filter 0.5s ease;
+  /* background-position: center;
+  background-repeat: no-repeat; */
+  z-index: 0;
+  /* filter: grayscale(1);
+  transition: filter 0.5s ease; */
   /* background-image: url("/images/bento-bg.png"); */
 }
-.bento-bg:hover {
-  filter: grayscale(0); /* remove grayscale on hover */
-}
+
 .bento-bg::after {
   position: absolute;
   height: 100%;
@@ -325,6 +323,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-position: top;
   background-repeat: no-repeat;
   z-index: 1;
+  filter: grayscale(0);
 }
 .bento-bg-long {
   content: "";
