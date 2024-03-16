@@ -303,6 +303,12 @@ body::-webkit-scrollbar-thumb:hover {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 10;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+  /* background-image: url("/images/bento-bg.png"); */
+}
+.bento-bg:hover {
+  filter: grayscale(0); /* remove grayscale on hover */
 }
 .bento-bg::after {
   position: absolute;
